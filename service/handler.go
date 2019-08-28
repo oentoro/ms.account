@@ -4,4 +4,4 @@ import (
 	"github.com/oentoro/ms.account/dbclient"
 )
 
-var DBClient dbclient.IboltClient
+var DBClient dbclient.IBoltClient
