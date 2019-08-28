@@ -26,10 +26,6 @@ func (bc *BoltClient) OpenBoltDb(){
 	}
 }
 
-func (bc *BoltClient) Seed(){
-	initializeBucket()
-	seedAccounts()
-}
 
 func(bc *BoltClient) initializeBucket(){
 	bc.boltDB.Update(func(tx *bolt.Tx) error {
@@ -67,4 +63,9 @@ func (bc *BoltClient) seedAccounts() {
 			})
 	}
 	fmt.Printf("Seeded %v fake accounts...\n", total)
+}
+
+func (bc *BoltClient) Seed(){
+	initializeBucket()
+	seedAccounts()
 }
