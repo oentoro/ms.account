@@ -21,7 +21,7 @@ type BoltClient struct {
 
 func (bc *BoltClient) OpenBoltDb(){
 	var err error
-	bc.boltDB, err = bolt.Open("accounts.db", 0500, nil)
+	bc.boltDB, err = bolt.Open("accounts.db", 0600, nil)
 	if err != nil {
 		log.Fatal(err)
 	}
