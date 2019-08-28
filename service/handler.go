@@ -1,7 +1,7 @@
 package service
 
 import (
-	"dbclient"
+	"github.com/oentoro/ms.account/dbclient"
 )
 
 var DBClient dbclient.IboltClient

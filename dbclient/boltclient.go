@@ -3,6 +3,7 @@ package dbclient
 import (
 	"model"
 	"log"
+	"github.com/oentoro/ms.account/model"
 )
 
 type IBoltClient interface { 
