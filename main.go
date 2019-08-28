@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"fmt"
 	"github.com/oentoro/ms.account/service"
+	"github.com/oentoro/ms.account/dbclient"
 )
 
 var appName = "main service"
