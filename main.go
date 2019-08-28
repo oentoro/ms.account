@@ -3,10 +3,10 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"fmt"
-	"service"
+	"github.com/oentoro/ms.account/service"
 )
 
-var appName = "sms service"
+var appName = "main service"
 
 func initializeBoltClient(){
 	service.DBClient = &dbclient.BoltClient{}

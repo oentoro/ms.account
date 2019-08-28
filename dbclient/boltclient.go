@@ -5,7 +5,7 @@ import (
 	"log"
 )
 
-type IBoltClient interface {
+type IBoltClient interface { 
 	OpenBoltDb()
 	QueryAccount(accountId string) (model.Account, error)
 	Seed()
